@@ -4,7 +4,7 @@
 
 ### Description:
 
-This is a personal website project where I'm teaching myself html, css, and javascript. This is to show off my learned skills, and personal projects.
+This is a personal website project where I'm learning html, css, javascript, and eventually frameworks. This is a way for me to show what I have learned so far, and to briefly give a few details about myself.
 
 ### Files
 
