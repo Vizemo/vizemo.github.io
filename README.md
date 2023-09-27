@@ -1,10 +1,10 @@
-# Personal portfolio website project## vizemo.github.io
+## Personal Portfolio Website Project
 
 ### Victor Marchesi
 
 ### Description:
 
-List of all the programs for this class using markdown for ease of access.
+This is a personal website project where I'm teaching myself html, css, and javascript. This is to show off my learned skills, and personal projects.
 
 ### Files
 
