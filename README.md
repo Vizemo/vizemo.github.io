@@ -1,38 +1,15 @@
-# MSU ACM Chapter Alternative Site #
+## Personal Portfolio Website Project
 
-## Source Code for ACM Site ##
-## Our Site: [MSUACM.github.io](https://msuacm.github.io/) ##
+### Victor Marchesi
 
-### Hi! Glad you are here!! ###
-Glad to see you are here! 
-This repository will contain the source code for the alternative ACM site. The goal of this site is to help teach those who want to learn how simple hosting with 
-Github pages really is. The following `README.md` will contain the technologies used to create the site, colors used, and maybe some basic lessons for some concepts used in said site. 
+### Description:
 
-#### Technologies used in this project! ####
-- HTML5
-- CSS 
-- JavaScript (ES6)
+This is a personal website project where I'm learning html, css, javascript, and eventually frameworks. This is a way for me to show what I have learned so far, and to briefly give a few details about myself.
 
-#### Tools Used:
-- VSCode
-- Git/ Git Bash
-- Github (kinda a resource as well)
-#### Color Guide to Page ####
+### Files
 
-Color | Hex
-------|------  
-      |
-      | 
-      | 
-      | 
-      | 
-      | 
-      | 
-
-
-
-#### Concepts for Reference ####
-
-
-
-
+|   #   | Folder    | Description                      |
+| :---: | -------- | -------------------------------- |
+|   2   | [pushnotes.md](./pushnotes.md) | Detailed pushnotes for personal use |
+|   1   | [index.html](./index.html) | The html code that makes the website |
+|   3   | [styles.css](./styles.css) | Code that attacks certain parts of the html code |
