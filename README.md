@@ -8,8 +8,8 @@ This is a personal website project where I'm learning html, css, javascript, and
 
 ### Files
 
-|   #   | Folder    | Description                      |
-| :---: | -------- | -------------------------------- |
-|   2   | [pushnotes.md](./pushnotes.md) | Detailed pushnotes for personal use. |
+|   #   | Folder    | Description |
+| - | - | - |
+|   2   | [pushnotes.md](./pushnotes.md) | Detailed pushnotes for personal use.|
 |   1   | [index.html](./index.html) | The html code that makes the website. |
-|   3   | [styles.css](./styles.css) | Code that attacks certain parts of the html code. |
+|   3   | [styles.css](./styles.css) | Code that attacks certain parts of the |htmlcode. |
