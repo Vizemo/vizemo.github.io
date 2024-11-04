@@ -5,3 +5,5 @@ Fresh start with udemy tutorial setup.
 ##### 11/3/24
 - Added basic html, css to follow soon.
 - additional nav bar updates, major changes to come
+- added a copyright footer
+- final code review, edited for readability
