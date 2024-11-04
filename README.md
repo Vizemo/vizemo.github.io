@@ -10,6 +10,6 @@ This is a personal website project where I'm learning html, css, javascript, and
 
 |   #   | Folder | Description |
 | - | - | - |
-|   2   | [pushnotes.md](./pushnotes.md) | Detailed pushnotes for personal use.|
-|   1   | [index.html](./index.html) | The html code that makes the home page of the website. |
+|   1   | [pushnotes.md](./pushnotes.md) | Detailed pushnotes for personal use.|
+|   2   | [index.html](./index.html) | The html code that makes the home page of the website. |
 |   3   | [styles.css](./styles.css) | Code that attacks certain parts of the |htmlcode. |
