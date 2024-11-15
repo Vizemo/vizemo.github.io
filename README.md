@@ -10,8 +10,8 @@ This is a personal website project where I'm learning html, css, javascript, and
 
 |   #   | Color Hex | Notes |
 | - | - | - |
-|   1   | A6AEBF | Color Palette |
-|   2   | C5D3E8 | Color Palette |
-|   3   | D0E8C5 | Color Palette |
-|   4   | FFF8DE | Color Palette |
-|   5   | 1C201B | good contrast color for navbar |
+|   1   | #A6AEBF | Color Palette colors |
+|   2   | #C5D3E8 | Color Palette colors |
+|   3   | #D0E8C5 | Color Palette colors |
+|   4   | #FFF8DE | Color Palette colors |
+|   5   | 1C201B | Good contrast text color for #C5D3E8 |
