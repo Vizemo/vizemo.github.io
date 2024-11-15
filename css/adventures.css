@@ -1,0 +1,93 @@
+* { /* margin and padding for whole page */
+    margin: 0; /* Reset all element margins to zero */
+    padding: 0; /* Reset all element padding to zero */
+    box-sizing: border-box; /* Include padding and border in element’s total width and height */
+}
+
+html, body { /* Set the body to use flexbox to make footer stay at bottom */
+    height: 100%; /* Ensure body fills the viewport height */
+    display: flex; /* Enable flexbox layout */
+    flex-direction: column; /* Arrange children vertically (navbar, content, footer) */
+    font-family: "Poppins", sans-serif; /* Set default font family */
+}
+
+.background { /* Flex-grow to make content fill available space */
+    flex: 1; /* Allows this section to take up available space between navbar and footer */
+    background-color: #C5D3E8; /* Light background color */
+    padding: 20px; /* Add space around the content */
+    text-align: center; /* Center-align text in the content */
+    display: flex; /* Use flexbox to position inner content */
+    align-items: center; /* Center vertically */
+    justify-content: center; /* Center horizontally */
+}
+
+/**** Navbar CSS Start ****/
+nav { /* Styling for the navigation bar */
+    background-color: #C5D3E8; /* Match background color of the page */
+    padding: 10px 0; /* Vertical padding for space within the navbar */
+    position: sticky; /* Keeps navbar at the top while scrolling */
+    top: 0; /* Positions the sticky navbar at the top */
+    z-index: 1000; /* Ensures navbar is above other content layers */
+}
+
+nav ul { /* Remove default list styles */
+    list-style-type: none; /* Remove bullet points from list */
+    padding: 0; /* Remove padding around list */
+    margin: 0; /* Remove margin around list */
+    display: flex; /* Use flexbox to arrange items horizontally */
+    justify-content: flex-end; /* Align navbar items to the right */
+}
+
+nav li { /* Style each list item */
+    margin: 0 15px; /* Horizontal spacing between each navbar item */
+}
+
+nav a { /* Style the links */
+    font-family: "Poppins", sans-serif;
+    font-weight: 200;
+    color: #1C201B; /* Dark text color for links */
+    font-weight: bold; /* Make links bold */
+    font-size: 1.2em; /* Increase font size slightly */
+    padding: 8px 16px; /* Add padding to links to make them easier to click */
+    text-decoration: none; /* Remove default underline */
+    border-bottom: 4px solid #C5D3E8; /* Persistent underline using border */
+    transition: color 0.3s, border-color 0.3s; /* Smooth transition for color changes on hover */
+}
+
+nav a:hover { /* Hover effect for links */
+    color: #fff; /* Change link color to white on hover */
+    border-bottom-color: #fff; /* Change underline color to white on hover */
+}
+/**** Navbar CSS End ****/
+
+/**** Main CSS Start ****/
+h1 { /* Style for primary headers */
+    margin-top: 40px; /* Add space above the header */
+    color: #1C201B; /* Dark text color for header */
+    font-weight: 500; /* Medium font weight */
+    font-style: italic; /* Italicize the header text */
+}
+
+p { /* Style for secondary headers */
+    margin-top: 40px; /* Add space above the sub-header */
+    color: #1C201B; /* Dark text color for sub-header */
+    font-weight: 300; /* Light font weight for sub-header */
+    font-style: italic; /* Italicize the sub-header text */
+}
+/**** Main CSS End ****/
+
+/**** Footer CSS Start ****/
+footer { /* Styling for the footer */
+    font-family: "Poppins", sans-serif;
+    font-weight: 200;
+    font-style: italic;
+    background-color: #C5D3E8; /* Match background color of the page */
+    color: #1C201B; /* Dark text color for footer */
+    padding: 10px; /* Add padding within footer */
+    display: flex; /* Use flexbox to arrange items horizontally */
+    justify-content: center; /* Center the footer content */
+    margin-top: auto; /* Push footer to bottom when content is short */
+    position: relative; /* Ensures footer’s stacking context for z-index */
+    z-index: 1000; /* Ensures footer is above other content layers */
+}
+/**** Footer CSS End ****/

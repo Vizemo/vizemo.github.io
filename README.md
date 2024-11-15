@@ -8,9 +8,10 @@ This is a personal website project where I'm learning html, css, javascript, and
 
 ### Colors Used
 
-|   #   | Color Hex |
-| - | - |
-|   1   | A6AEBF |
-|   2   | C5D3E8 |
-|   3   | D0E8C5 |
-|   4   | FFF8DE |
+|   #   | Color Hex | Notes |
+| - | - | - |
+|   1   | A6AEBF | Color Palette |
+|   2   | C5D3E8 | Color Palette |
+|   3   | D0E8C5 | Color Palette |
+|   4   | FFF8DE | Color Palette |
+|   5   | 1C201B | good contrast color for navbar |
