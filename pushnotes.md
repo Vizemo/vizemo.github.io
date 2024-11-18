@@ -1,6 +1,10 @@
 ### Better pushnotes from newest to oldest
 
-
+##### 11/17/2024
+- added permanent underline depending on what page your on for the navbar
+- modified the div for the welcome-block section telling viewers about whats on each page.
+- added a border and hover effect to make it float when your mouse goes over it.
+- added rounder edges to the underlines in the navbar
 ##### 11/14/24
 - added a small amount of code to setup navbar for css
 - added major changes, redefined the following
