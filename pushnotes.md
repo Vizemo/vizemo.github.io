@@ -5,6 +5,8 @@
 - modified the div for the welcome-block section telling viewers about whats on each page.
 - added a border and hover effect to make it float when your mouse goes over it.
 - added rounder edges to the underlines in the navbar
+- changed some text in the html and made all the css the same for future iterations, 
+future iterations will contain different content on each page past the welcome box so they're the same for now, but will change in the future
 ##### 11/14/24
 - added a small amount of code to setup navbar for css
 - added major changes, redefined the following

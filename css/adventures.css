@@ -83,11 +83,7 @@ h3 { /* Style for secondary headers */
     font-style: italic;
 }
 
-p {
-    font-size: 1.3rem;
-}
-
-.welcome-block {
+.welcome-block { /* Block customization for depth */
     background-color: #A6AEBF; /* Darker background color */
     padding: 20px; /* Space inside the container */
     border-radius: 10px; /* Smooth, rounded corners */
@@ -101,10 +97,11 @@ p {
     transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for hover effects */
 }
 
-.welcome-block:hover {
+.welcome-block:hover { /* Block customization for hover effect */
     transform: translateY(-5px); /* Lift more on hover */
     box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2), 0 4px 6px rgba(0, 0, 0, 0.1); /* Enhance shadow on hover */
 }
+
 /**** Main CSS End ****/
 
 /**** Footer CSS Start ****/
