@@ -73,6 +73,7 @@ h1 { /* Style for primary headers */
     font-family: "Poppins", sans-serif;
     font-weight: 500;
     font-style: italic;
+    font-size: 3.7rem;
 }
 
 h3 { /* Style for secondary headers */
