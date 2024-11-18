@@ -12,6 +12,8 @@ they're the same for now, but will change in the future
 - renamed index.html to home.html and moved that into html folder
 - changed the links for each html to accomodate this
 - added a js folder with temp.js for future iterations
+- hosting on github requires index.html and also a public folder for other pages
+so I reverted back to this :)
 ##### 11/14/24
 - added a small amount of code to setup navbar for css
 - added major changes, redefined the following
