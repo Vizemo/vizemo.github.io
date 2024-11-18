@@ -83,6 +83,10 @@ h3 { /* Style for secondary headers */
     font-style: italic;
 }
 
+p { /* font size to scale up the size a bit from root size */
+    font-size: 1.3rem;
+}
+
 .welcome-block { /* Block customization for depth */
     background-color: #A6AEBF; /* Darker background color */
     padding: 20px; /* Space inside the container */
