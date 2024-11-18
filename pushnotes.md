@@ -6,7 +6,12 @@
 - added a border and hover effect to make it float when your mouse goes over it.
 - added rounder edges to the underlines in the navbar
 - changed some text in the html and made all the css the same for future iterations, 
-future iterations will contain different content on each page past the welcome box so they're the same for now, but will change in the future
+future iterations will contain different content on each page past the welcome box so 
+they're the same for now, but will change in the future
+- renamed public folder to html folder
+- renamed index.html to home.html and moved that into html folder
+- changed the links for each html to accomodate this
+- added a js folder with temp.js for future iterations
 ##### 11/14/24
 - added a small amount of code to setup navbar for css
 - added major changes, redefined the following
