@@ -68,7 +68,7 @@ nav a.active { /* Dark underline to show which page you're on */
 
 /**** Main CSS Start ****/
 h1 { /* Style for primary headers */
-    margin-top: 40px; /* Add space above the header */
+    margin-top: 25px; /* Add space above the header */
     color: #1C201B; /* Dark text color for header */
     font-family: "Poppins", sans-serif;
     font-weight: 500;
@@ -76,15 +76,10 @@ h1 { /* Style for primary headers */
 }
 
 h3 { /* Style for secondary headers */
-    margin-top: 40px; /* Add space above the sub-header */
+    margin-top: 25px; /* Add space above the sub-header */
     color: #1C201B; /* Dark text color for sub-header */
     font-family: "Poppins", sans-serif;
     font-weight: 300;
-    font-style: italic;
-}
-
-p { /* font size to scale up the size a bit from root size */
-    font-size: 1.3rem;
 }
 
 .welcome-block { /* Block customization for depth */

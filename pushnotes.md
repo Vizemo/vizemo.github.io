@@ -14,6 +14,7 @@ they're the same for now, but will change in the future
 - added a js folder with temp.js for future iterations
 - hosting on github requires index.html and also a public folder for other pages
 so I reverted back to this :)
+- removed italics from welcome div
 ##### 11/14/24
 - added a small amount of code to setup navbar for css
 - added major changes, redefined the following
