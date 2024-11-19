@@ -68,11 +68,12 @@ nav a.active { /* Dark underline to show which page you're on */
 
 /**** Main CSS Start ****/
 h1 { /* Style for primary headers */
-    margin-top: 40px; /* Add space above the header */
+    margin-top: 25px; /* Add space above the header */
     color: #1C201B; /* Dark text color for header */
     font-family: "Poppins", sans-serif;
     font-weight: 500;
     font-style: italic;
+    font-size: 3.7rem;
 }
 
 h3 { /* Style for secondary headers */
