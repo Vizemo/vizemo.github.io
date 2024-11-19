@@ -68,7 +68,6 @@ nav a.active { /* Dark underline to show which page you're on */
 
 /**** Main CSS Start ****/
 h1 { /* Style for primary headers */
-    margin-top: 10px; /* Add space above the header */
     color: #1C201B; /* Dark text color for header */
     font-family: "Poppins", sans-serif;
     font-weight: 500;
@@ -98,6 +97,32 @@ h3 { /* Style for secondary headers */
 .welcome-block:hover { /* Block customization for hover effect */
     transform: translateY(-5px); /* Lift more on hover */
     box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2), 0 4px 6px rgba(0, 0, 0, 0.1); /* Enhance shadow on hover */
+}
+
+/* CSS fade in with animation delay */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.slow-text {
+opacity: 0; /* Hidden by default */
+animation: fadeIn 1.5s ease-in forwards; /* 2s fade-in animation */
+}
+
+/* Add delays to each element */
+.slow-text:nth-child(1) {
+animation-delay: 0s; /* Start immediately */
+}
+.slow-text:nth-child(2) {
+animation-delay: 1.15s; /* Start after 1.5 seconds */
+}
+.slow-text:nth-child(3) {
+animation-delay: 2.3s; /* Start after 3 seconds */
 }
 
 /**** Main CSS End ****/

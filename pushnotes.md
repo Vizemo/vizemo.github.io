@@ -1,5 +1,9 @@
 ### Better pushnotes from newest to oldest
 
+##### 11/19/2024
+- removed border from the welcome box
+- changed text font size for other pages to 3.7rem
+- added a fade in for the text on the main page
 ##### 11/17/2024
 - added permanent underline depending on what page your on for the navbar
 - modified the div for the welcome-block section telling viewers about whats on each page.
