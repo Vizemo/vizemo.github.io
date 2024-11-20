@@ -20,6 +20,30 @@ html, body { /* Set the body to use flexbox to make footer stay at bottom */
     justify-content: center; /* Center horizontally */
 }
 
+.background {
+    flex: 1;
+    background: linear-gradient(135deg, #5C677D, #7F899B, #A6AEBF, #C5D3E8);
+    background-size: 400% 400%;
+    animation: gradientShift 10s ease infinite;
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@keyframes gradientShift {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
 /**** Navbar CSS Start ****/
 nav { /* Styling for the navigation bar */
     background-color: #C5D3E8; /* Match background color of the page */
@@ -27,6 +51,8 @@ nav { /* Styling for the navigation bar */
     position: sticky; /* Keeps navbar at the top while scrolling */
     top: 0; /* Positions the sticky navbar at the top */
     z-index: 1000; /* Ensures navbar is above other content layers */
+    padding-bottom: 15px;
+    border-bottom: 1px solid #A6AEBF;
 }
 
 nav ul { /* Remove default list styles */
@@ -86,6 +112,7 @@ h3 { /* Style for secondary headers */
     background-color: #C5D3E8; /* Darker background color */
     padding: 20px; /* Space inside the container */
     border-radius: 10px; /* Smooth, rounded corners */
+    border: 1px solid #A6AEBF;
     color: #1C201B; /* Contrasting text color */
     max-width: 600px; /* Limit the block width */
     margin: 0 auto; /* Center align horizontally */
@@ -141,5 +168,6 @@ footer { /* Styling for the footer */
     margin-top: auto; /* Push footer to bottom when content is short */
     position: relative; /* Ensures footer’s stacking context for z-index */
     z-index: 1000; /* Ensures footer is above other content layers */
+    border-top: 1px solid #A6AEBF;
 }
 /**** Footer CSS End ****/
