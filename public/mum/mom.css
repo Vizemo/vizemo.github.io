@@ -1,0 +1,156 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.background {
+    background: linear-gradient(135deg, #9dc4ff, #bde0fe, #89cff0, #6ca6cd);
+    background-size: 400% 400%;
+    animation: gradientShift 10s ease infinite;
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@keyframes gradientShift {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+
+
+h1, h3 {
+    color: #1C201B; /* Dark text color for header */
+    font-family: "Poppins", sans-serif; /* Consistent font family */
+    font-weight: 500; /* Bold weight for both */
+    font-style: italic; /* Italic style for both */
+    opacity: 0; /* Fade-in effect */
+    animation: fadeIn 2.5s ease-in forwards; /* Slower fade-in animation */
+}
+
+/* Specific styles for h1 */
+h1 {
+    font-size: 3rem; /* Larger font size for main header */
+    animation-delay: 0.5s; /* Delayed fade-in for h1 */
+}
+
+/* Specific styles for h3 */
+h3 {
+    font-size: 1.5rem; /* Smaller font size for subheaders */
+    margin-top: 25px; /* Space above h3 */
+    animation-delay: 1s; /* Delayed fade-in for h3 */
+}
+
+/* Grid layout for the first row */
+.grid-layout {
+    display: grid;
+    grid-template-columns: 300px auto; /* Left: Fixed width, Right: Stretch */
+    gap: 20px; /* Space between columns */
+    margin-top: 20px;
+    align-items: center; /* Align items in the middle */
+}
+
+/* Stacked images on the left */
+.stacked-images {
+    display: flex;
+    flex-direction: column; /* Stack images vertically */
+    gap: 20px; /* Space between stacked images */
+}
+
+/* General image block styling */
+.image-block {
+    width: 300px; /* Fixed width for all images */
+    height: auto; /* Let height adjust dynamically based on the image */
+    overflow: hidden; /* Ensure no overflow from the image container */
+    border-radius: 10px; /* Rounded corners for the image block */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow around the image block */
+    position: relative; /* Establish positioning context */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover effects */
+    opacity: 0; /* Hidden initially for fade-in effect */
+    animation: fadeIn 2.5s ease-in forwards; /* Apply fade-in effect */
+}
+
+/* Apply staggered fade-in delays for images */
+.image-block:nth-child(1) {
+    animation-delay: 0.5s;
+}
+
+.image-block:nth-child(2) {
+    animation-delay: 1s;
+}
+
+.image-block:nth-child(3) {
+    animation-delay: 1.5s;
+}
+
+.image-block:nth-child(4) {
+    animation-delay: 2s;
+}
+
+.image-block:nth-child(5) {
+    animation-delay: 2.5s;
+}
+
+/* Tall image on the right in Row 1 */
+.tall-image {
+    height: 420px; /* Fixed height to match two stacked images */
+    width: 300px; /* Fixed width */
+    animation-delay: 2.5s; /* Later fade-in */
+}
+
+.tall-image img {
+    width: 100%; /* Ensure the image fills the container width */
+    height: 100%; /* Stretch to match height */
+    object-fit: cover; /* Maintain aspect ratio while cropping to fit */
+}
+
+/* Images inside rows (except for the tall image in row 1) */
+.image-block img {
+    width: 100%; /* Fit the width of the container */
+    height: auto; /* Maintain the aspect ratio */
+    object-fit: contain; /* Display the full image without cropping */
+    display: block; /* Remove the inline gap caused by inline elements */
+    border: 1.75px solid rgba(0, 0, 0, 0.15); /* Subtle border for depth */
+    border-radius: 8px; /* Rounded corners for the image itself */
+}
+
+/* Hover effect for all image blocks */
+.image-block:hover {
+    transform: scale(1.05); /* Slight zoom on hover */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3); /* Enhanced shadow */
+}
+
+/* Image container for rows (from Row 2 onward) */
+.image-container {
+    display: flex; /* Use flexbox for side-by-side alignment */
+    gap: 20px; /* Space between images */
+    justify-content: center; /* Center the images within the row */
+    align-items: center; /* Align items vertically */
+    margin-top: 20px;
+}
+
+/* Keyframe for fade-in animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
