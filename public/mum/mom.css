@@ -8,13 +8,15 @@ html, body {
     height: 100%;
     display: flex;
     flex-direction: column;
+    font-size: 16px; /* Base font size for scaling */
+    line-height: 1.5; /* Improve readability */
 }
 
 .background {
     background: linear-gradient(135deg, #9dc4ff, #bde0fe, #89cff0, #6ca6cd);
     background-size: 400% 400%;
     animation: gradientShift 10s ease infinite;
-    padding: 20px;
+    padding: 10px; /* Reduced padding for mobile screens */
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -33,60 +35,59 @@ html, body {
     }
 }
 
-
-
 h1, h3 {
     color: #1C201B; /* Dark text color for header */
-    font-family: "Poppins", sans-serif; /* Consistent font family */
-    font-weight: 500; /* Bold weight for both */
-    font-style: italic; /* Italic style for both */
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: italic;
     opacity: 0; /* Fade-in effect */
-    animation: fadeIn 2.5s ease-in forwards; /* Slower fade-in animation */
+    animation: fadeIn 2.5s ease-in forwards;
+    text-align: center;
 }
 
 /* Specific styles for h1 */
 h1 {
-    font-size: 3rem; /* Larger font size for main header */
-    animation-delay: 0.5s; /* Delayed fade-in for h1 */
+    font-size: 2.5rem; /* Adjusted for smaller screens */
+    animation-delay: 0.5s;
 }
 
 /* Specific styles for h3 */
 h3 {
-    font-size: 1.5rem; /* Smaller font size for subheaders */
-    margin-top: 25px; /* Space above h3 */
-    animation-delay: 1s; /* Delayed fade-in for h3 */
+    font-size: 1.2rem; /* Smaller font size for subheaders */
+    margin-top: 15px;
+    animation-delay: 1s;
 }
 
 /* Grid layout for the first row */
 .grid-layout {
     display: grid;
-    grid-template-columns: 300px auto; /* Left: Fixed width, Right: Stretch */
-    gap: 20px; /* Space between columns */
+    grid-template-columns: 1fr 1fr; /* Equal columns for responsiveness */
+    gap: 20px;
     margin-top: 20px;
-    align-items: center; /* Align items in the middle */
+    align-items: center;
 }
 
-/* Stacked images on the left */
 .stacked-images {
     display: flex;
-    flex-direction: column; /* Stack images vertically */
-    gap: 20px; /* Space between stacked images */
+    flex-direction: column;
+    gap: 10px; /* Reduced gap for better spacing on mobile */
 }
 
 /* General image block styling */
 .image-block {
-    width: 300px; /* Fixed width for all images */
-    height: auto; /* Let height adjust dynamically based on the image */
-    overflow: hidden; /* Ensure no overflow from the image container */
-    border-radius: 10px; /* Rounded corners for the image block */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow around the image block */
-    position: relative; /* Establish positioning context */
-    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover effects */
+    width: 90%; /* Scale to screen width */
+    max-width: 300px;
+    height: auto;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    position: relative;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
     opacity: 0; /* Hidden initially for fade-in effect */
-    animation: fadeIn 2.5s ease-in forwards; /* Apply fade-in effect */
+    animation: fadeIn 2.5s ease-in forwards;
+    margin: 0 auto; /* Center images */
 }
 
-/* Apply staggered fade-in delays for images */
 .image-block:nth-child(1) {
     animation-delay: 0.5s;
 }
@@ -107,50 +108,76 @@ h3 {
     animation-delay: 2.5s;
 }
 
-/* Tall image on the right in Row 1 */
 .tall-image {
-    height: 420px; /* Fixed height to match two stacked images */
-    width: 300px; /* Fixed width */
-    animation-delay: 2.5s; /* Later fade-in */
+    width: 90%;
+    height: auto; /* Maintain aspect ratio */
+    animation-delay: 2.5s;
 }
 
 .tall-image img {
-    width: 100%; /* Ensure the image fills the container width */
-    height: 100%; /* Stretch to match height */
-    object-fit: cover; /* Maintain aspect ratio while cropping to fit */
+    width: 100%;
+    height: auto;
+    object-fit: cover;
 }
 
-/* Images inside rows (except for the tall image in row 1) */
 .image-block img {
-    width: 100%; /* Fit the width of the container */
-    height: auto; /* Maintain the aspect ratio */
-    object-fit: contain; /* Display the full image without cropping */
-    display: block; /* Remove the inline gap caused by inline elements */
-    border: 1.75px solid rgba(0, 0, 0, 0.15); /* Subtle border for depth */
-    border-radius: 8px; /* Rounded corners for the image itself */
+    width: 100%; /* Full width */
+    height: auto; /* Maintain aspect ratio */
+    object-fit: contain;
+    display: block;
+    border: 1.75px solid rgba(0, 0, 0, 0.15);
+    border-radius: 8px;
 }
 
-/* Hover effect for all image blocks */
-.image-block:hover {
-    transform: scale(1.05); /* Slight zoom on hover */
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3); /* Enhanced shadow */
-}
-
-/* Image container for rows (from Row 2 onward) */
 .image-container {
-    display: flex; /* Use flexbox for side-by-side alignment */
-    gap: 20px; /* Space between images */
-    justify-content: center; /* Center the images within the row */
-    align-items: center; /* Align items vertically */
+    display: flex;
+    flex-wrap: wrap; /* Wrap images to new rows on small screens */
+    gap: 10px; /* Reduce gaps for smaller screens */
+    justify-content: center;
+    align-items: center;
     margin-top: 20px;
 }
 
-/* Keyframe for fade-in animation */
 @keyframes fadeIn {
     from {
         opacity: 0;
     }
     to {
         opacity: 1;
+    }
+}
+
+/* Hover effect for all image blocks */
+.image-block:hover {
+    transform: scale(1.05); /* Slight zoom */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* Remove hover effects for mobile */
+@media (hover: none) {
+    .image-block:hover {
+        transform: none;
+        box-shadow: none;
+    }
+}
+
+/* Responsive layout adjustments */
+@media (max-width: 768px) {
+    .grid-layout {
+        display: flex;
+        flex-direction: column; /* Stack elements vertically */
+        gap: 10px;
+    }
+
+    .image-container {
+        gap: 10px; /* Smaller gap for better spacing */
+    }
+
+    h1 {
+        font-size: 2rem; /* Smaller headers for mobile */
+    }
+
+    h3 {
+        font-size: 1rem;
     }
 }
